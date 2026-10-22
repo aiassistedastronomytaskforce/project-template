@@ -1,8 +1,6 @@
 # repo-name
 
-One or two sentences: what this is and who it's for.
-
-<!-- For a demo, put the live link and a screenshot here. -->
+One or two sentences: what this is and who it's for. For a demo, put the live link and a screenshot here.
 
 ## Run it
 
@@ -10,25 +8,17 @@ One or two sentences: what this is and who it's for.
 # the exact commands, or "open site/index.html in a browser"
 ```
 
-## Inputs and outputs
+## How it works
 
-What data it reads (and from where) and what it produces. Name any shared formats from
-[`hub/schemas`](https://github.com/aiassistedastronomytaskforce/hub/tree/main/schemas) it uses.
-
-## Method and references
-
-The published methods or physics it implements, with references. For demos, say what is simplified.
+Data used, method or physics, and references. For demos, say what's simplified.
 
 ## AI use
 
-What the AI tools did (code, text, analysis, figures) and what you checked yourself, and how.
+What the AI tools did and what you checked yourself.
 
 ## License
 
-Code: MIT (see [`LICENSE`](LICENSE); replace "the repo-name authors" with your name). For `data-` and `paper-`
-repos, CC BY 4.0 is usually a better fit; swap the file if so.
+MIT (see [`LICENSE`](LICENSE); replace "the repo-name authors" with your name). For data or write-ups, CC BY 4.0
+is often a better fit.
 
-## Status
-
-Stage: `sandbox`. See [`project.yaml`](project.yaml) and the org's
-[project lifecycle](https://github.com/aiassistedastronomytaskforce/.github/blob/main/GOVERNANCE.md#project-lifecycle).
+<!-- When this repo is set up, add a row for it to the hub's PROJECTS.md. -->

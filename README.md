@@ -23,6 +23,11 @@ The published methods or physics it implements, with references. For demos, say 
 
 What the AI tools did (code, text, analysis, figures) and what you checked yourself, and how.
 
+## License
+
+Code: MIT (see [`LICENSE`](LICENSE); replace "the repo-name authors" with your name). For `data-` and `paper-`
+repos, CC BY 4.0 is usually a better fit; swap the file if so.
+
 ## Status
 
 Stage: `sandbox`. See [`project.yaml`](project.yaml) and the org's

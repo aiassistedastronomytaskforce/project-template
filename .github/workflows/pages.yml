@@ -1,3 +1,4 @@
+# Publishes site/ to GitHub Pages. Turn Pages on once: Settings → Pages → Source: "GitHub Actions".
 name: pages
 on:
   push:
@@ -12,7 +13,18 @@ concurrency:
   group: pages
   cancel-in-progress: true
 jobs:
+  check:
+    runs-on: ubuntu-latest
+    if: ${{ !github.event.repository.is_template }}
+    outputs:
+      has_site: ${{ steps.site.outputs.has_site }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: site
+        run: echo "has_site=$([ -f site/index.html ] && echo true || echo false)" >> "$GITHUB_OUTPUT"
   deploy:
+    needs: check
+    if: needs.check.outputs.has_site == 'true'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
